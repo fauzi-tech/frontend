@@ -1,0 +1,113 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="starter">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEMELIHARAAN</title>
+  <div layout:fragment="additional-link">
+
+    <!-- link css loading -->
+    <link rel="stylesheet" href="/css/loading.css">
+    <!-- link plugin toastr -->
+    <link rel="stylesheet" href="/admin-lte/plugins/toastr/toastr.min.css">
+  </div>
+</head>
+
+<body>
+  <div class="content-wrapper" layout:fragment="content">
+    <!-- Header -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row">
+          <h2><b>PEMELIHARAAN PEMBLOKIRAN</b></h2>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <!-- conten -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="card card-danger">
+          <div class="card-header">
+            <h3 class="card-title"></h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="card-body">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Fixed Header Table</h3>
+                      <div class="card-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0" style="height: 300px;">
+                      <table class="table table-head-fixed text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>KODE</th>
+                            <th>KETERANGAN</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>183</td>
+                            <td>John Doe</td>
+                          </tr>
+                          <tr>
+                            <td>219</td>
+                            <td>Alexander Pierce</td>
+                          </tr>
+                          <tr>
+                            <td>657</td>
+                            <td>Bob Doe</td>
+                          </tr>
+                          <tr>
+                            <td>175</td>
+                            <td>Mike Doe</td>
+                          </tr>
+                          <tr>
+                            <td>134</td>
+                            <td>Jim Doe</td>
+                          </tr>
+                          <tr>
+                            <td>494</td>
+                            <td>Victoria Doe</td>
+                          </tr>
+                          <tr>
+                            <td>832</td>
+                            <td>Michael Doe</td>
+                          </tr>
+                          <tr>
+                            <td>982</td>
+                            <td>Rocky Doe</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+  </div>
+  <div layout:fragment="additional-script">
+    <script src="/admin-lte/plugins/toastr/toastr.min.js"></script>
+  </div>
+</body>
+
+</html>

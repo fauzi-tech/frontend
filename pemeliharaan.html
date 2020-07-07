@@ -1,0 +1,82 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="starter">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEMELIHARAAN</title>
+    <div layout:fragment="additional-link">
+        <!-- link css loading -->
+        <link rel="stylesheet" href="/css/loading.css">
+        <!-- link plugin toastr -->
+        <link rel="stylesheet" href="/admin-lte/plugins/toastr/toastr.min.css">
+    </div>
+</head>
+
+<body>
+    <div class="content-wrapper" layout:fragment="content">
+        <!-- Header -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>PEMELIHARAAN PARAMETER LAINNYA</h2>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <!-- conten -->
+        <div class="content">
+            <div class="container-fluid">
+                
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">KODE</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info">KODE LIST</button>
+                                <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" href="#">Kolektibilitas</a>
+                                    <a class="dropdown-item" href="#">Biaya</a>
+                                    <a class="dropdown-item" href="#">Hubungan</a>
+                                    <a class="dropdown-item" href="#">Pajak</a>
+                                    <a class="dropdown-item" href="#">Versi Lapbul</a>
+                                    <a class="dropdown-item" href="#">Monitoring Debitur</a>
+                                    <a class="dropdown-item" href="#">GI Integrasi</a>
+                                    <a class="dropdown-item" href="/pemelblokir">Alasan Blokir</a>
+                                    <a class="dropdown-item" href="#">informasi Kantor</a>
+                                    <a class="dropdown-item" href="#">Rekening Antar Kantor</a>
+                                    <a class="dropdown-item" href="#">Account Officer</a>
+                                    <a class="dropdown-item" href="#">Atm Id</a>
+                                    <a class="dropdown-item" href="#">Akses</a>
+                                    <a class="dropdown-item" href="#">Group Nasabah</a>
+                                    <a class="dropdown-item" href="#">Jenis Buku Tambahan</a>
+                                    <a class="dropdown-item" href="#">Kelurahan</a>
+                                    <a class="dropdown-item" href="#">Kecamatan</a>
+                                    <a class="dropdown-item" href="#">PK Instansi</a>
+                                    <a class="dropdown-item" href="#">Konrol Transaksi</a>
+                                    <a class="dropdown-item" href="#">Hari Libur</a>
+                                    <a class="dropdown-item" href="#">Miscellouneous Account</a>
+                                    <a class="dropdown-item" href="#">Instansi</a>
+                                    <a class="dropdown-item" href="#">Hari Libur Proses</a>
+                                  </div>
+                                </button>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    </div>
+    <div layout:fragment="additional-script">
+        <script src="/admin-lte/plugins/toastr/toastr.min.js"></script>
+    </div>
+</body>
+
+</html>
